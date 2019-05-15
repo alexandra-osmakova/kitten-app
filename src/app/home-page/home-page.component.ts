@@ -12,7 +12,7 @@ export class HomePageComponent implements OnInit {
 
   constructor(public api: ApiCallService) {
     this.api.callForKittenInfo();
-    // this.getMainPics()
+    this.getMainPics()
   }
 
   ngOnInit() {
