@@ -9,6 +9,7 @@ import { ApiCallService } from '../services/api-call.service';
 export class HomePageComponent implements OnInit {
 
   mainPics: Array<string> = [];
+  kittensCollection = '4811977'
 
   constructor(public api: ApiCallService) {
     this.api.callForKittenInfo();
@@ -19,7 +20,7 @@ export class HomePageComponent implements OnInit {
   }
 
   getMainPics() {
-    this.api.unsplashRequest().subscribe(
+    this.api.unsplashRequest(this.kittensCollection).subscribe(
       (data: any) => {
         try {
           console.log(data)

@@ -71,16 +71,20 @@ section .search_wrap button {
 section .main_content {
   display: flex;
   justify-content: space-between;
+  padding-top: 40px;
 }
 
 section .main_content p {
   width: 50%;
-  padding: 40px 0;
 }
 
 section .main_content .img_wrap {
   width: 45%;
-  padding: 40px 0;
+  height: fit-content;
+  border: 1px solid #b3b3b3 !important;
+  box-shadow: 0 0 4px 0 rgba(179, 179, 179, 0.54);
+  border-radius: 4px;
+  padding: 10px;
 }
 
 section .main_content .img_wrap img {

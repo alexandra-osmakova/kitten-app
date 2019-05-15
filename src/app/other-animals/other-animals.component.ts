@@ -31,7 +31,7 @@ export class OtherAnimalsComponent implements OnInit {
           else {
             this.searchInfo = data.extract;
             if(data.originalimage.source) {
-              this.searchImg = data.originalimage.source
+               this.searchImg = data.originalimage.source
             }
            
           }

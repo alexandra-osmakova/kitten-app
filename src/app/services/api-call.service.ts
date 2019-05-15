@@ -31,10 +31,8 @@ export class ApiCallService {
     return this.http.get(url);
   }
 
-  unsplashRequest() {
-    // const url = `${this.unsplashUrl}/collections/4811977/photos/?client_id=${this.unsplashId}`;
-
-    const url = `${this.unsplashUrl}/collections/4811977/photos/?client_id=${this.unsplashId}`;
+  unsplashRequest(id) {
+    const url = `${this.unsplashUrl}/collections/${id}/photos/?client_id=${this.unsplashId}&per_page=30`;
     return this.http.get(url);
   }
 }

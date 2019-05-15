@@ -19,7 +19,7 @@ export class MenuTabComponent implements OnInit {
     },
     {
       id: 'Nice pics',
-      path: ''
+      path: 'gallery'
     },
     {
       id: 'How to take care',

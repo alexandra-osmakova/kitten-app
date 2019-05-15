@@ -1,0 +1,44 @@
+@import "../../assets/theme.scss";
+
+section {
+  width: 80%;
+  margin: 0 auto;
+  padding: $padding;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  h4 {
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  button {
+    width: 60px; 
+    height: 60px;
+    cursor: pointer;
+  }
+
+  .section_content {
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+
+    .section_content__item {
+      width: 33.3%;
+
+      .img_wrap {
+        width: 100%;
+        height: fit-content;
+        border: 1px solid $silver-gray;
+        box-shadow: 0 0 4px 0 rgba(179, 179, 179, 0.54);
+        padding: 10px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
