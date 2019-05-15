@@ -15,7 +15,7 @@ section {
   }
 
   button {
-    width: 60px; 
+    width: 60px;
     height: 60px;
     cursor: pointer;
   }
@@ -34,9 +34,26 @@ section {
         border: 1px solid $silver-gray;
         box-shadow: 0 0 4px 0 rgba(179, 179, 179, 0.54);
         padding: 10px;
+        position: relative;
 
         img {
           width: 100%;
+        }
+
+        .color_wrap {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(255, 230, 255, 0.5);
+          transition: all 0.5s ease;
+        }
+      }
+
+      .img_wrap:hover {
+        .color_wrap {
+          background-color: rgba(255, 230, 255, 0);
         }
       }
     }

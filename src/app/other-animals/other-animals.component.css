@@ -85,8 +85,18 @@ section .main_content .img_wrap {
   box-shadow: 0 0 4px 0 rgba(179, 179, 179, 0.54);
   border-radius: 4px;
   padding: 10px;
+  position: relative;
 }
 
 section .main_content .img_wrap img {
   width: 100%;
+}
+
+section .main_content .img_wrap .color_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 230, 255, 0.5);
 }

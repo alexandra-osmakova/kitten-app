@@ -14,5 +14,10 @@ ul {
         border: 1px solid $pink;
         padding: 15px;
         cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    li:hover {
+        box-shadow: 0 0 4px 0 rgba(179, 179, 179, 0.33);
     }
 }
