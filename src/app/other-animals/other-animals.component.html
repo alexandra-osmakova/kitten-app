@@ -1,0 +1,14 @@
+<section>
+  <h4>Which sweetie you want <br> to learn about?</h4>
+  <div class="search_wrap">
+    <input [(ngModel)]="searchInput" type="text" name="" id="" placeholder="ex. Puppy">
+    <button (click)='currentSearch()'>Wiki it!</button>
+  </div>
+  <div class="main_content">
+    <p>{{searchInfo}}</p>
+    <div class="img_wrap">
+      <img src={{searchImg}} alt="">
+    </div>
+  </div>
+
+</section>

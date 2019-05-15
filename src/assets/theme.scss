@@ -1,0 +1,121 @@
+$sky-blue: #00b4f7 !important;
+$dark-gray: #242424 !important;
+$silver-gray: #b3b3b3 !important;
+$white: #ffffff !important;
+$green: #33cc33 !important;
+$pink: #ffe6ff !important;
+
+$padding: 20px 40px;
+
+%heading1 {
+  font-size: 96px;
+  font-weight: 300;
+  color: $dark-gray;
+  letter-spacing: -1.5px;
+  font-family: "Gotham Pro";
+  margin: 0;
+}
+
+%heading2 {
+  font-size: 60px;
+  color: $dark-gray;
+  font-weight: normal;
+  letter-spacing: -0.5px;
+  font-family: "Gotham Pro";
+  margin: 0;
+}
+
+%heading3 {
+  font-size: 48px;
+  color: $dark-gray;
+  font-weight: 500;
+  letter-spacing: 0px;
+  font-family: "Gotham Pro";
+  margin: 0;
+}
+
+%heading4 {
+  font-size: 34px;
+  color: $dark-gray;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  font-family: "Gotham Pro";
+  line-height: 1.3;
+  margin: 0;
+}
+
+%heading5 {
+  font-size: 24px;
+  color: $dark-gray;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+  font-family: "Gotham Pro";
+  margin: 0;
+}
+
+%heading6 {
+  font-size: 20px;
+  color: $dark-gray;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  font-family: "Gotham Pro";
+  margin: 0;
+}
+
+%buttonText {
+  font-size: 16px !important;
+  color: $white;
+  font-weight: normal !important;
+  letter-spacing: 0.8px !important;
+  text-transform: uppercase !important;
+  text-align: center !important;
+  line-height: 1 !important;
+  font-family: "Gotham Pro" !important;
+}
+
+%bodyText1 {
+  font-size: 16px;
+  color: $dark-gray;
+  font-weight: normal;
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+  font-family: "Gotham Pro";
+}
+
+%bodyText2 {
+  font-size: 14px;
+  color: $dark-gray;
+  font-weight: normal;
+  letter-spacing: 0.2px;
+  font-family: "Gotham Pro";
+}
+
+%subtitleText1 {
+  font-size: 16px;
+  color: $dark-gray;
+  font-weight: normal;
+  letter-spacing: 0.2px;
+  font-family: "Gotham Pro";
+  line-height: 16px;
+}
+
+%subtitleText2 {
+  font-size: 14px;
+  color: $dark-gray;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  font-family: "Gotham Pro";
+  line-height: 16px;
+}
+
+%TextCaption {
+  font-size: 12px;
+  color: $dark-gray;
+  font-weight: normal;
+  letter-spacing: 0.4px;
+  font-family: "Gotham Pro";
+}
+
+h4 {
+  @extend %heading4;
+}

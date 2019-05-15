@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("assets/theme.scss");
-
 @font-face {
   font-family: "Gotham Pro";
   src: url(assets/fonts/GothamPro.woff);
@@ -64,6 +63,3 @@ input[type=checkbox] {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-
-html, body { height: 100%; }
-body { margin: 0; font-family: 'Roboto', sans-serif; }

@@ -1,0 +1,15 @@
+<section>
+  <h4>all about nice kittens</h4>
+  <p>
+    {{api.kittenInfoCurrent}}
+    <span>wiki</span>
+  </p>
+  <div class="pics_holder">
+    <div class="img_wrap" *ngFor="let item of mainPics">
+      <img src={{item}} alt="">
+      <div class="color_wrap">
+        <span>NICE!!!</span>
+      </div>
+    </div>
+  </div>
+</section>
