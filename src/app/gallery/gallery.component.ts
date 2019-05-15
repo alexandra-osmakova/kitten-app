@@ -35,14 +35,18 @@ export class GalleryComponent implements OnInit {
   }
 
   createGalleryColumns() {
+    const galleryToSplice = this.fullGallery.slice();
     for(let i = 0; i < this.currentGallery.length; i++) {
-      this.currentGallery[i] = this.fullGallery.splice(0, 10);
+      this.currentGallery[i] = galleryToSplice.splice(0, 10);
     }
   }
 
   refreshGallery() {
-    for(let i = 0; i < this.currentGallery.length; i++) {
-      this.currentGallery[i] = this.currentGallery[i].reverse()
-    }
+    this.fullGallery.sort(this.compareRandom);
+    this.createGalleryColumns()
+  }
+
+  compareRandom(a, b) {
+    return Math.random() - 0.5;
   }
 }
