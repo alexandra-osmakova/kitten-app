@@ -1,0 +1,19 @@
+<section>
+  <h4>How to take care of sweeties</h4>
+  <div class="section_content">
+    <div class="section_content__container">
+      <h5>To do</h5>
+      <div cdkDropList #todoList="cdkDropList" [cdkDropListData]="todo" [cdkDropListConnectedTo]="[doneList]"
+        class="section_content__column" (cdkDropListDropped)="drop($event)">
+        <div class="section_content__column_item" *ngFor="let item of todo" cdkDrag>{{item}}</div>
+      </div>
+    </div>
+    <div class="section_content__container">
+      <h5>Done</h5>
+      <div cdkDropList #doneList="cdkDropList" [cdkDropListData]="done" [cdkDropListConnectedTo]="[todoList]"
+        class="section_content__column" (cdkDropListDropped)="drop($event)">
+        <div class="section_content__column_item" *ngFor="let item of done" cdkDrag>{{item}}</div>
+      </div>
+    </div>
+  </div>
+</section>
