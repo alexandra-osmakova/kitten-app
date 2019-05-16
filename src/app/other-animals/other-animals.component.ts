@@ -27,6 +27,7 @@ export class OtherAnimalsComponent implements OnInit {
           console.log(data)
           if(data.type !== "standard") {
             this.searchInfo = 'No info about this sweetie in Wiki 😭';
+            this.searchImg = '';
           }
           else {
             this.searchInfo = data.extract;
@@ -37,6 +38,7 @@ export class OtherAnimalsComponent implements OnInit {
           }
         } catch (e) {
           this.searchInfo = 'No info about this sweetie in Wiki 😭';
+          this.searchImg = '';
         }
       }
     );

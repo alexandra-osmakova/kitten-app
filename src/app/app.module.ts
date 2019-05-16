@@ -13,6 +13,7 @@ import { OtherAnimalsComponent } from './other-animals/other-animals.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ToDoComponent } from './to-do/to-do.component';
+import { UserFormComponent } from './user-form/user-form.component';
 
 const appRoutes: Routes = [
   {
@@ -34,6 +35,10 @@ const appRoutes: Routes = [
   {
     path: 'to-do-list',
     component: ToDoComponent
+  },
+  {
+    path: 'form',
+    component: UserFormComponent
   }
 ];
 
@@ -44,7 +49,8 @@ const appRoutes: Routes = [
     MenuTabComponent,
     OtherAnimalsComponent,
     GalleryComponent,
-    ToDoComponent
+    ToDoComponent,
+    UserFormComponent
   ],
   imports: [
     BrowserModule,

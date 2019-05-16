@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 })
 export class MenuTabComponent implements OnInit {
 
+  callFormButton: boolean = true;
+
   menuControlls: any= [
     {
       id: 'Home',
@@ -35,8 +37,16 @@ export class MenuTabComponent implements OnInit {
   }
 
   changePage(i) {
+    if(this.callFormButton !== true) {
+      this.callFormButton = true;
+    }
     const path = this.menuControlls[i];
     this.router.navigate([path.path]);
+  }
+
+  formCaller() {
+    this.router.navigate(['form']);
+    this.callFormButton = false;
   }
 
   ngOnInit() {

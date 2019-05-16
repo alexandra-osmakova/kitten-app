@@ -8,13 +8,22 @@ h4 {
   margin: 0;
 }
 
-ul li {
+h5, ul li, .form_caller button {
   font-size: 24px;
   color: #242424 !important;
-  font-weight: bold;
+  font-weight: 500;
   letter-spacing: 0.1px;
   font-family: "Gotham Pro";
   margin: 0;
+}
+
+.form_caller .hidden_text p {
+  font-size: 14px;
+  color: #242424 !important;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  font-family: "Gotham Pro";
+  line-height: 16px;
 }
 
 ul {
@@ -23,6 +32,7 @@ ul {
   display: flex;
   justify-content: space-between;
   padding: 20px 40px;
+  position: relative;
 }
 
 ul li {
@@ -36,4 +46,59 @@ ul li {
 
 ul li:hover {
   box-shadow: 0 0 4px 0 rgba(179, 179, 179, 0.33);
+}
+
+.form_caller {
+  position: absolute;
+  right: 60px;
+  top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form_caller button {
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #ffe6ff !important;
+  box-shadow: 0 0 4px 0 rgba(179, 179, 179, 0.33);
+  border-radius: 50%;
+  cursor: pointer;
+  color: #b3b3b3 !important;
+}
+
+.form_caller button svg {
+  width: 60%;
+}
+
+.form_caller .hidden_text {
+  width: 80px;
+  padding: 7px;
+  position: relative;
+  margin-top: 20px;
+  border: 4px solid #ffe6ff !important;
+  box-shadow: 0 0 4px 0 rgba(179, 179, 179, 0.33);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.form_caller .hidden_text::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -15px;
+  left: calc(50% - 10px);
+  border-style: solid;
+  border-width: 0 10px 15px 10px;
+  border-color: transparent transparent #ffe6ff transparent;
+}
+
+.form_caller:hover .hidden_text {
+  opacity: 1;
 }

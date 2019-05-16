@@ -1,23 +1,85 @@
 @import "../../assets/theme.scss";
 
 ul {
-    width: 80%;
-    margin:  0 auto;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: $padding;
+  position: relative;
+
+  li {
+    list-style-type: none;
+    @extend %heading5;
+    color: $silver-gray;
+    border: 1px solid $pink;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  li:hover {
+    box-shadow: 0 0 4px 0 rgba(179, 179, 179, 0.33);
+  }
+}
+
+.form_caller {
+  position: absolute;
+  right: 60px;
+  top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  button {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
     display: flex;
-    justify-content: space-between;
-    padding: $padding;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid $pink;
+    box-shadow: 0 0 4px 0 rgba(179, 179, 179, 0.33);
+    border-radius: 50%;
+    cursor: pointer;
+    @extend %heading5;
+    color: $silver-gray;
 
-    li {
-        list-style-type: none;
-        @extend %heading5;
-        color: $silver-gray;
-        border: 1px solid $pink;
-        padding: 15px;
-        cursor: pointer;
-        transition: all 0.2s ease;
+    svg {
+      width: 60%;
     }
+  }
 
-    li:hover {
-        box-shadow: 0 0 4px 0 rgba(179, 179, 179, 0.33);
+  .hidden_text {
+    width: 80px;
+    padding: 7px;
+    position: relative;
+    margin-top: 20px;
+    border: 4px solid $pink;
+    box-shadow: 0 0 4px 0 rgba(179, 179, 179, 0.33);
+    opacity: 0;
+    transition: all 0.5s ease;
+
+    p {
+      @extend %subtitleText2;
     }
+  }
+
+  .hidden_text::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 10px);
+    border-style: solid;
+    border-width: 0 10px 15px 10px;
+    border-color: transparent transparent #ffe6ff transparent;
+  }
+
+}
+
+.form_caller:hover .hidden_text {
+    opacity: 1;
 }
