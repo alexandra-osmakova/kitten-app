@@ -8,6 +8,15 @@ h4 {
   margin: 0;
 }
 
+h5 {
+  font-size: 24px;
+  color: #242424 !important;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  font-family: "Gotham Pro";
+  margin: 0;
+}
+
 section .main_content p {
   font-size: 16px;
   color: #242424 !important;
@@ -17,7 +26,7 @@ section .main_content p {
   font-family: "Gotham Pro";
 }
 
-section .search_wrap input, section .search_wrap input::placeholder, section .search_wrap button {
+section .search_wrap input, section .search_wrap button {
   font-size: 16px;
   color: #242424 !important;
   font-weight: normal;
@@ -51,10 +60,6 @@ section .search_wrap input {
   border: 1px solid #b3b3b3 !important;
   box-shadow: 0 0 4px 0 rgba(179, 179, 179, 0.54);
   border-radius: 4px;
-}
-
-section .search_wrap input::placeholder {
-  opacity: 0.7;
 }
 
 section .search_wrap button {

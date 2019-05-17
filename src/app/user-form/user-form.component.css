@@ -1,0 +1,194 @@
+h4 {
+  font-size: 34px;
+  color: #242424 !important;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  font-family: "Gotham Pro";
+  line-height: 1.3;
+  margin: 0;
+}
+
+h5 {
+  font-size: 24px;
+  color: #242424 !important;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  font-family: "Gotham Pro";
+  margin: 0;
+}
+
+section .form_checkbox, section .form_column__input_group label, section .form_row label {
+  font-size: 16px;
+  color: #242424 !important;
+  font-weight: normal;
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+  font-family: "Gotham Pro";
+}
+
+section button, section .form_column__input_group input,
+section .form_column__input_group textarea {
+  font-size: 16px;
+  color: #242424 !important;
+  font-weight: normal;
+  letter-spacing: 0.2px;
+  font-family: "Gotham Pro";
+  line-height: 16px;
+}
+
+section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+
+section h4 {
+  text-transform: capitalize;
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+section .section_content {
+  width: 100%;
+}
+
+section form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+section .form_column {
+  width: 50%;
+}
+
+section .form_column__checkbox_group {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 32px;
+}
+
+section button {
+  text-transform: uppercase;
+  height: 50px;
+  padding: 10px 20px;
+  border: 1px solid #b3b3b3 !important;
+  box-shadow: 0 0 4px 0 rgba(179, 179, 179, 0.54);
+  border-radius: 4px;
+  background-color: #ffe6ff !important;
+  cursor: pointer;
+}
+
+section .form_checkbox {
+  user-select: none;
+  display: flex;
+  width: 50%;
+  align-items: center;
+  padding: 0 0 10px;
+}
+
+section .form_checkbox span {
+  line-height: 1.5;
+}
+
+section .main_checkbox {
+  width: 100%;
+}
+
+section .main_checkbox span {
+  border-bottom: 2px solid #b3b3b3 !important;
+  margin-bottom: 5px;
+}
+
+section .form_checkbox .form_checkbox_wrap {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #b3b3b3 !important;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+}
+
+section .form_checkbox_wrap svg {
+  width: 80%;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+section .form_checkbox input[type=checkbox] {
+  display: none;
+}
+
+section .form_checkbox input:checked + .form_checkbox_wrap svg {
+  opacity: 1;
+}
+
+section .form_column__input_group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+section .form_column__input_group label {
+  padding-bottom: 10px;
+}
+
+section .form_column__input_group input,
+section .form_column__input_group textarea {
+  width: 70%;
+  height: 50px;
+  padding: 15px 20px;
+  border: 1px solid #b3b3b3 !important;
+  box-shadow: 0 0 4px 0 rgba(179, 179, 179, 0.54);
+  border-radius: 4px;
+}
+
+section .form_column__input_group textarea {
+  width: 100%;
+  height: 225px;
+  resize: none;
+}
+
+section .form_row {
+  width: 100%;
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+section .form_row label {
+  padding-bottom: 10px;
+}
+
+section .form_row .form_row__loaded_pics {
+  width: 100%;
+  padding: 15px 20px;
+  border: 1px solid #b3b3b3 !important;
+  box-shadow: 0 0 4px 0 rgba(179, 179, 179, 0.54);
+  border-radius: 4px;
+  min-height: 100px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+section .form_row .form_row__loaded_pics .img_wrap {
+  width: 200px;
+  border: 1px solid #b3b3b3 !important;
+  box-shadow: 0 0 4px 0 rgba(179, 179, 179, 0.54);
+  border-radius: 4px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+section .form_row .form_row__loaded_pics img {
+  width: 100%;
+}
