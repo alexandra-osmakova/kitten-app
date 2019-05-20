@@ -24,7 +24,6 @@ export class OtherAnimalsComponent implements OnInit {
     this.api.wikiRequest(this.searchInput).subscribe(
       (data: any) => {
         try {
-          console.log(data)
           if(data.type !== "standard") {
             this.searchInfo = 'No info about this sweetie in Wiki 😭';
             this.searchImg = '';

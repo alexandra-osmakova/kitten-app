@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { MenuStateService } from '../services/menu-state.service';
 
 @Component({
   selector: 'app-menu-tab',
@@ -8,9 +9,7 @@ import { Router } from '@angular/router';
 })
 export class MenuTabComponent implements OnInit {
 
-  callFormButton: boolean = true;
-
-  menuControlls: any= [
+  menuControlls: Array<any> = [
     {
       id: 'Home',
       path: 'main-page'
@@ -31,22 +30,21 @@ export class MenuTabComponent implements OnInit {
   ]
 
   constructor(
-    private router: Router
-  ) { 
-    
+    private router: Router,
+    private menuState: MenuStateService
+  ) {
   }
 
+
   changePage(i) {
-    if(this.callFormButton !== true) {
-      this.callFormButton = true;
-    }
+    this.menuState.clearMenuState()
     const path = this.menuControlls[i];
     this.router.navigate([path.path]);
   }
 
   formCaller() {
     this.router.navigate(['form']);
-    this.callFormButton = false;
+    this.menuState.changeMenuState();
   }
 
   ngOnInit() {

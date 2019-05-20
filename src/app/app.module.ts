@@ -15,6 +15,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ToDoComponent } from './to-do/to-do.component';
 import { UserFormComponent } from './user-form/user-form.component';
+import { UserFormAnswerComponent } from './user-form-answer/user-form-answer.component';
+import { MenuStateService } from './services/menu-state.service'
 
 const appRoutes: Routes = [
   {
@@ -51,7 +53,8 @@ const appRoutes: Routes = [
     OtherAnimalsComponent,
     GalleryComponent,
     ToDoComponent,
-    UserFormComponent
+    UserFormComponent,
+    UserFormAnswerComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +65,7 @@ const appRoutes: Routes = [
     DragDropModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [MenuStateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

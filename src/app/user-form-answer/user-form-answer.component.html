@@ -1,0 +1,11 @@
+<div class="main_content">
+  <h4>Thanx for your message!!</h4>
+  <p>It's so nice from you to share info about your sweeties with us!!</p>
+  <p>We so amazed with {{petsIncome.names | titlecase}}({{petsIncome.petsType}}), <br>
+    they are really {{petsIncome.petsDescription}}</p>
+  <div class="pic_holder" *ngIf="petsIncome.petImages">
+    <div *ngFor="let item of petsIncome.petImages" class="img_wrap">
+      <img src={{item}} alt="">
+    </div>
+  </div>
+</div>

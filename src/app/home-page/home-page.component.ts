@@ -23,14 +23,12 @@ export class HomePageComponent implements OnInit {
     this.api.unsplashRequest(this.kittensCollection).subscribe(
       (data: any) => {
         try {
-          console.log(data)
           this.mainPics = data.map(function(el) {
             return el.urls.small
           })
         } catch (e) {
           console.log('error')
         }
-        console.log(this.mainPics)
       }
     );
   }

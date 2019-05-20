@@ -1,0 +1,63 @@
+h4 {
+  font-size: 34px;
+  color: #242424 !important;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  font-family: "Gotham Pro";
+  line-height: 1.3;
+  margin: 0;
+}
+
+h5 {
+  font-size: 24px;
+  color: #242424 !important;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  font-family: "Gotham Pro";
+  margin: 0;
+}
+
+.main_content p {
+  font-size: 16px;
+  color: #242424 !important;
+  font-weight: normal;
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+  font-family: "Gotham Pro";
+}
+
+.main_content {
+  width: 100%;
+}
+
+.main_content h4 {
+  text-transform: capitalize;
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+.main_content p {
+  text-align: center;
+}
+
+.main_content .pic_holder {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main_content .pic_holder .img_wrap {
+  width: 250px;
+  border: 1px solid #b3b3b3 !important;
+  box-shadow: 0 0 4px 0 rgba(179, 179, 179, 0.54);
+  border-radius: 4px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.main_content .pic_holder img {
+  width: 100%;
+}

@@ -73,12 +73,14 @@ section .form_column__checkbox_group {
 section button {
   text-transform: uppercase;
   height: 50px;
+  width: 15%;
   padding: 10px 20px;
   border: 1px solid #b3b3b3 !important;
   box-shadow: 0 0 4px 0 rgba(179, 179, 179, 0.54);
   border-radius: 4px;
   background-color: #ffe6ff !important;
   cursor: pointer;
+  float: right;
 }
 
 section .form_checkbox {

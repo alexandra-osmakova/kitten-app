@@ -19,7 +19,9 @@ export class UserFormComponent implements OnInit {
 
   mainCheckbox = false;
   userForm: FormGroup;
-  picsLinks: Array<any>;
+  picsLinks: Array<any> = [];
+  petsOutcome: object;
+  showAnswer: boolean = false;
 
   constructor(
     private fb: FormBuilder,
@@ -85,9 +87,9 @@ export class UserFormComponent implements OnInit {
   previewFile(event) {
 
     if (event.target.files) {
-      Promise.all(Array.from(event.target.files).map(i => new Promise(resolve => {
+      Promise.all(Array.from(event.target.files).map((el, index) => new Promise(resolve => {
         const reader = new FileReader();
-        reader.readAsDataURL(i);
+        reader.readAsDataURL(event.target.files[index]);
         reader.onload = (event) => {
           resolve(event.target.result);
         }
@@ -98,14 +100,23 @@ export class UserFormComponent implements OnInit {
   }
 
   createMessage() {
-    console.log(this.userForm)
+    if(this.picsLinks)
+    this.petsOutcome = {
+      names: this.userForm.controls.petsName.value,
+      petsType: this.userForm.controls.pets.value,
+      petsDescription:  this.userForm.controls.petsDescription.value,
+      petImages: this.picsLinks
+    } 
+
+    this.showAnswer = true;
+
   }
 
   private initForm(): void {
     this.userForm = this.fb.group({
-      pets: this.fb.array([]),
-      petsName: [''],
-      petsDescription: ['']
+      pets: this.fb.array([], Validators.required),
+      petsName: ['', Validators.required],
+      petsDescription: ['', Validators.required]
     })
   }
 
