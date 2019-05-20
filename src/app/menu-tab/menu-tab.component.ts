@@ -31,7 +31,7 @@ export class MenuTabComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private menuState: MenuStateService
+    public menuState: MenuStateService
   ) {
   }
 

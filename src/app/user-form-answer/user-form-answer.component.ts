@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./user-form-answer.component.scss']
 })
 export class UserFormAnswerComponent implements OnInit {
-  @Input() petsIncome: object;
+  @Input() petsIncome: any;
 
   constructor() {
    }

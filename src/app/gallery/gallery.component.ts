@@ -23,7 +23,6 @@ export class GalleryComponent implements OnInit {
     this.api.unsplashRequest(4820156).subscribe(
       (data: any) => {
         try {
-          console.log(data)
           this.fullGallery = data.map(function (el, index) {
             return {id: index, val: el.urls.small}
           })
